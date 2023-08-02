@@ -1008,6 +1008,10 @@ summary::-webkit-details-marker {
 
   .promo {
     min-height: 364px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
 
     .promo__img {
       visibility: hidden;
