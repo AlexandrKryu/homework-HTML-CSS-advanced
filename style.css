@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -633,6 +634,204 @@ summary::-webkit-details-marker {
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+}
+
+.cart {
+  margin-top: 96px;
+}
+.cart__wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 128px;
+}
+.cart__left-side {
+  display: flex;
+  flex-direction: column;
+  min-width: 652px;
+}
+.cart__card {
+  max-width: 652px;
+  display: flex;
+  box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.1294117647);
+  margin-bottom: 40px;
+  position: relative;
+}
+.cart__card-description {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  padding: 20px 100px 60px 30px;
+}
+.cart__card-description_heading {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 29px;
+  color: #222;
+}
+.cart__card-description_text {
+  color: #575757;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.cart__card-description__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cart__card-description__fields_color-price {
+  color: #F16D7F;
+}
+.cart__card-description__fields_color {
+  color: #6F6E6E;
+}
+.cart__card-description__fields input {
+  font-family: "Lato", sans-serif;
+  width: 44px;
+  color: #656565;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  padding-left: 14px;
+  margin-left: 24px;
+  border: 1px solid #EAEAEA;
+}
+.cart__close {
+  position: absolute;
+  top: 28px;
+  right: 22px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.cart__close:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+.cart__btns-list {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+  margin-bottom: 128px;
+}
+.cart__btn {
+  border: 1px solid #A4A4A4;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding: 16px 40px;
+  background: none;
+  transition: all 0.2s ease-in-out;
+}
+.cart__btn:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.cart__right-side {
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 57px;
+}
+.cart__form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+  width: 100%;
+}
+.cart__form_heading {
+  color: #222;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+}
+.cart__form input {
+  font-family: "Lato", sans-serif;
+  width: 360px;
+  height: 45px;
+  border: 1px solid #A4A4A4;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  padding: 0 17px;
+}
+.cart__form input::-moz-placeholder {
+  color: #B1B1B1;
+}
+.cart__form input::placeholder {
+  color: #B1B1B1;
+}
+.cart__form button {
+  border: 1px solid #A4A4A4;
+  color: #4A4A4A;
+  font-family: Lato;
+  font-size: 11px;
+  font-weight: 300;
+  background: none;
+  padding: 11px 15px;
+  transition: all 0.2s ease-in-out;
+}
+.cart__form button:hover {
+  background-color: #F16D7F;
+  color: #FFF;
+}
+.cart__total {
+  background: #F5F3F3;
+  padding: 40px 44px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.cart__total-subtotal {
+  color: #4A4A4A;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+}
+.cart__total-subtotal span {
+  margin-left: 30px;
+}
+.cart__total-grandtotal {
+  color: #222222;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  margin-bottom: 21px;
+}
+.cart__total-grandtotal span {
+  margin-left: 30px;
+  color: #F16D7F;
+  font-size: 16px;
+  font-weight: 700;
+}
+.cart__total button {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 15px 34px;
+  background-color: #F16D7F;
+  border: none;
+  cursor: pointer;
+  border: 1px rgba(0, 0, 0, 0);
+  transition: all 0.2s ease-in-out;
+}
+.cart__total button:hover {
+  background: none;
+  color: #F16D7F;
+  border: 1px solid rgb(241, 109, 127);
+}
+.cart__line {
+  width: 275px;
+  height: 1px;
+  background-color: #E2E2E2;
+  margin-bottom: 17px;
 }
 
 .footer {
