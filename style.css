@@ -834,6 +834,92 @@ summary::-webkit-details-marker {
   margin-bottom: 17px;
 }
 
+.reg__wrapper {
+  display: flex;
+  gap: 128px;
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+.reg__left p {
+  color: #B1B1B1;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+}
+.reg__left h3 {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.reg__left input {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.reg__button {
+  padding: 17px 29px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background: #F16D7F;
+  color: #FFF;
+  border-color: #F16D7F;
+}
+.reg__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 21px;
+  align-items: baseline;
+}
+.reg_ui {
+  color: #B1B1B1;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  border: 1px solid #A4A4A4;
+  padding-left: 17px;
+  margin-left: 24px;
+  width: 360px;
+  height: 45px;
+}
+.reg__right {
+  align-items: baseline;
+}
+.reg__right h3 {
+  padding-bottom: 22px;
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.reg__right p {
+  color: #000;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+}
+.reg__right ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 21px;
+  list-style-image: url(img/check.svg);
+  line-height: 16px;
+  gap: 23px;
+  color: #000;
+  font-family: Lato;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 29px;
+  gap: 16px;
+  flex-direction: column;
+  padding-inline-start: 2ch;
+}
+
 .footer {
   background-color: #222224;
   height: 79px;
@@ -872,7 +958,7 @@ summary::-webkit-details-marker {
   transition: all 0.3s;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1024px) and (max-width: 768px) {
   /* tablet */
   .center {
     padding-left: calc(50% - 376px);
@@ -923,7 +1009,7 @@ summary::-webkit-details-marker {
     height: 610px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   /* mobile */
   .header .header__left {
     gap: 41px;
