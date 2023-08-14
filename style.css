@@ -556,6 +556,40 @@ summary::-webkit-details-marker {
   flex-direction: column;
   align-items: center;
 }
+.content h3 {
+  color: #F16D7F;
+  font-size: 14px;
+  font-weight: 300;
+}
+.content p {
+  color: #5E5E5E;
+  text-align: center;
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 107px;
+  padding-right: 107px;
+}
+.content__heading {
+  padding-top: 12px;
+  padding-bottom: 48px;
+  color: #4D4D4D;
+  font-size: 18px;
+  font-weight: 300;
+}
+.content__price {
+  padding-top: 32px;
+  padding-bottom: 65px;
+  color: #F16D7F;
+}
+
+.sort {
+  padding-bottom: 48px;
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
 
 .subscribe__email {
   background-image: url(img/subscribe.jpg);
@@ -958,7 +992,7 @@ summary::-webkit-details-marker {
   transition: all 0.3s;
 }
 
-@media (max-width: 1024px) and (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px) {
   /* tablet */
   .center {
     padding-left: calc(50% - 376px);
@@ -967,6 +1001,8 @@ summary::-webkit-details-marker {
   .header {
     min-height: 74px;
     justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 18px;
   }
   .header__right {
     gap: 25px;
@@ -975,6 +1011,15 @@ summary::-webkit-details-marker {
   .header__left {
     gap: 42px;
     padding-left: 32px;
+  }
+  .head {
+    padding: 16px;
+  }
+  .sale {
+    display: grid;
+    padding: 16px;
+    gap: 18px;
+    box-sizing: border-box;
   }
   .sale__item_big {
     min-height: 116px;
@@ -987,10 +1032,19 @@ summary::-webkit-details-marker {
     font-size: 44px;
   }
   .product-box {
-    padding: 1%;
+    padding: 16px;
     display: flex;
     width: 100%;
     flex-direction: column;
+  }
+  .product-box__content {
+    display: grid;
+    grid-template-columns: repeat(2, 360px);
+    gap: 16px;
+  }
+  .product-box__product {
+    grid-template-columns: repeat(2, 360px);
+    grid-template-rows: repeat(1, 1fr);
   }
   .advantages {
     display: flex;
@@ -1008,8 +1062,31 @@ summary::-webkit-details-marker {
     align-items: center;
     height: 610px;
   }
+  .cart__wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 7px;
+    padding-right: 7px;
+    gap: 0;
+  }
+  .cart__left-side {
+    max-width: 100%;
+    padding: 0;
+  }
+  .cart__right-side {
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-bottom: 128px;
+    gap: 0;
+  }
+  .footer {
+    padding-left: 23px;
+    padding-right: 23px;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* mobile */
   .header .header__left {
     gap: 41px;
@@ -1026,12 +1103,27 @@ summary::-webkit-details-marker {
     visibility: hidden;
     display: none;
   }
+  .head {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head__heading {
+    display: flex;
+    align-items: center;
+  }
+  .breadcrumb {
+    visibility: hidden;
+  }
+  .filter__summary span {
+    display: none;
+  }
   .promo {
     min-height: 364px;
     box-sizing: border-box;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    padding-bottom: 146px;
   }
   .promo .promo__img {
     visibility: hidden;
@@ -1054,6 +1146,7 @@ summary::-webkit-details-marker {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    padding: 64px 16px;
   }
   .sale__item_big {
     min-height: 111px;
@@ -1064,16 +1157,44 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 96px;
+  }
+  .product-box__content {
+    gap: 17px;
+    grid-template-columns: repeat(1, 360px);
   }
   .product {
     box-sizing: border-box;
     padding: 16px 8px;
+  }
+  .cart__wrapper {
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cart__right-side {
+    padding-bottom: 95px;
+  }
+  .cart__btns-list {
+    justify-content: center;
+  }
+  .reg__wrapper {
+    flex-direction: column;
+  }
+  .reg__right {
+    padding-left: 9px;
+  }
+  .advantages {
+    flex-direction: column;
   }
   .advantages__item {
     box-sizing: border-box;
   }
   .advantages__heading {
     width: 157px;
+  }
+  .subscribe__email {
+    flex-direction: column;
   }
   .your__email {
     box-sizing: border-box;
@@ -1083,6 +1204,7 @@ summary::-webkit-details-marker {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    padding-bottom: 9px;
   }
   .footer__logs {
     align-items: center;
