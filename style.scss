@@ -925,7 +925,7 @@ summary::-webkit-details-marker {
   &__left-side {
     display: flex;
     flex-direction: column;
-    min-width: 652px;
+    max-width: 652px;
   }
 
   &__card {
@@ -1166,14 +1166,14 @@ summary::-webkit-details-marker {
       line-height: 29px;
     }
 
-    input {
+    &__ui {
+      width: 100vw;
       color: #000;
       font-size: 24px;
       font-weight: 300;
       line-height: 29px;
-
+      max-width: 100%;
     }
-
 
   }
 
@@ -1237,7 +1237,6 @@ summary::-webkit-details-marker {
       line-height: 16px;
       gap: 23px;
       color: #000;
-      font-family: Lato;
       font-size: 24px;
       font-weight: 300;
       line-height: 29px;
@@ -1371,12 +1370,13 @@ summary::-webkit-details-marker {
     align-items: center;
     height: 610px;
     padding: 48px;
+
     &__text {
       width: 360px;
     }
   }
 
-  
+
 
   .subscribe__email {
     display: flex;
@@ -1393,7 +1393,8 @@ summary::-webkit-details-marker {
       padding-right: 7px;
       gap: 0;
     }
-    &__left-side{
+
+    &__left-side {
       max-width: 100%;
       padding: 0;
     }
@@ -1414,7 +1415,7 @@ summary::-webkit-details-marker {
   }
 }
 
-@media (max-width:768px) {
+@media (max-width:768px) and (min-width: 425px) {
 
   /* mobile */
   .header {
@@ -1518,29 +1519,41 @@ summary::-webkit-details-marker {
     padding: 16px 8px;
   }
 
-.cart{
-  &__wrapper{
-    gap: 0px;
-    flex-direction: column;
-    align-items: center;
-  }
-  &__right-side{
-    padding-bottom: 95px;
-  }
-  &__btns-list{
-    justify-content: center;
-  }
-}
+  .cart {
+    &__wrapper {
+      gap: 0px;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.reg{
-  &__wrapper{
-    flex-direction: column;
+    &__right-side {
+      padding-bottom: 95px;
+    }
+
+    &__btns-list {
+      justify-content: center;
+    }
   }
 
-  &__right{
-    padding-left: 9px;
+  .reg {
+    &__wrapper {
+      flex-direction: column;
+    }
+
+    &__right {
+      padding-left: 9px;
+    }
+
+    &_ui {
+      width: 90%;
+      padding: 1px;
+      margin-right: 8px;
+    }
+
+    &__form {
+      width: 100%;
+    }
   }
-}
 
   .advantages {
     flex-direction: column;
@@ -1550,16 +1563,8 @@ summary::-webkit-details-marker {
     box-sizing: border-box;
   }
 
-  .advantages__heading {
-    width: 157px;
-  }
-
   .subscribe__email {
     flex-direction: column;
-  }
-
-  .your__email {
-    box-sizing: border-box;
   }
 
   .footer {

@@ -681,7 +681,7 @@ summary::-webkit-details-marker {
 .cart__left-side {
   display: flex;
   flex-direction: column;
-  min-width: 652px;
+  max-width: 652px;
 }
 .cart__card {
   max-width: 652px;
@@ -886,11 +886,13 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: 29px;
 }
-.reg__left input {
+.reg__left__ui {
+  width: 100vw;
   color: #000;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
+  max-width: 100%;
 }
 .reg__button {
   padding: 17px 29px;
@@ -945,7 +947,6 @@ summary::-webkit-details-marker {
   line-height: 16px;
   gap: 23px;
   color: #000;
-  font-family: Lato;
   font-size: 24px;
   font-weight: 300;
   line-height: 29px;
@@ -1086,7 +1087,7 @@ summary::-webkit-details-marker {
     padding-right: 23px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 425px) {
   /* mobile */
   .header .header__left {
     gap: 41px;
@@ -1184,20 +1185,22 @@ summary::-webkit-details-marker {
   .reg__right {
     padding-left: 9px;
   }
+  .reg_ui {
+    width: 90%;
+    padding: 1px;
+    margin-right: 8px;
+  }
+  .reg__form {
+    width: 100%;
+  }
   .advantages {
     flex-direction: column;
   }
   .advantages__item {
     box-sizing: border-box;
   }
-  .advantages__heading {
-    width: 157px;
-  }
   .subscribe__email {
     flex-direction: column;
-  }
-  .your__email {
-    box-sizing: border-box;
   }
   .footer {
     height: 143px;
